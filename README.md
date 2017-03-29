@@ -16,7 +16,6 @@ docker run -d \
 -v /etc/localtime:/etc/localtime:ro \
 -v /volume1/docker/cert:/etc/cert:ro \
 hnicolaisen/home-assistant
-
-´´´
+```
 
 see https://hub.docker.com/r/homeassistant/home-assistant/ for more info
