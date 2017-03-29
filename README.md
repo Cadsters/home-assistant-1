@@ -1,6 +1,11 @@
 # home-assistant
 custom home-assistant docker
 
+added:
+- ps4-waker
+- jq
+- nmap
+
 ```
 docker run -d \
 --name="home-assistant" \
