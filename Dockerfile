@@ -7,6 +7,6 @@ RUN apt-get install -y jq nmap lsof apt-transport-https netcat
 RUN curl -sL https://deb.nodesource.com/setup_6.x -o nodesource_setup.sh
 RUN bash nodesource_setup.sh
 RUN apt-get install -y nodejs
-RUN npm install ps4-waker -g
+RUN npm install ps4-waker@1.1.1 -g
 
 EXPOSE 8123:8123
