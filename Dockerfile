@@ -1,4 +1,4 @@
-FROM homeassistant/home-assistant:latest
+FROM homeassistant/home-assistant:0.55
 
 MAINTAINER Henrik Nicolaisen <henrik@nicolaisen.co>
 
