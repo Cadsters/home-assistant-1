@@ -5,6 +5,7 @@ added:
 - ps4-waker
 - jq
 - nmap
+- socat
 
 ```
 docker run -d \
@@ -17,5 +18,5 @@ docker run -d \
 -v /volume1/docker/cert:/etc/cert:ro \
 hnicolaisen/home-assistant
 ```
-
+forked from Henrik Nicolaisen
 see https://hub.docker.com/r/homeassistant/home-assistant/ for more info
