@@ -16,7 +16,7 @@ docker run -d \
 -v /volume1/docker/home-assistant/config:/config \
 -v /etc/localtime:/etc/localtime:ro \
 -v /volume1/docker/cert:/etc/cert:ro \
-Cadsters/home-assistant-1
+Cadsters/home-assistant-docker
 ```
 forked from Henrik Nicolaisen
 
