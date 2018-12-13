@@ -1,6 +1,6 @@
 FROM homeassistant/home-assistant:latest
 
-MAINTAINER Henrik Nicolaisen <henrik@nicolaisen.co>
+MAINTAINER Cadster <cadsters@hotmail.com>
 
 RUN apt-get update
 RUN apt-get install -y jq nmap lsof apt-transport-https netcat
