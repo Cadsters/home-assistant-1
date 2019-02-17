@@ -4,10 +4,10 @@ MAINTAINER Cadster <cadsters@hotmail.com>
 
 RUN apt-get update
 # Install locales dependencies
-RUN apt-get update && apt-get install -y --no-install-recommends \
-        locales \
-        apt-utils \
-    && rm -rf /var/lib/apt/lists/*
+#RUN apt-get update && apt-get install -y --no-install-recommends \
+#        locales \
+#        apt-utils \
+#    && rm -rf /var/lib/apt/lists/*
 # Configure timezone and locale
 RUN echo "Europe/Amsterdam" > /etc/timezone && \
     dpkg-reconfigure -f noninteractive tzdata && \
