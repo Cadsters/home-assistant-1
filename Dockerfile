@@ -3,20 +3,6 @@ FROM homeassistant/home-assistant:latest
 MAINTAINER Cadster <cadsters@hotmail.com>
 
 RUN apt-get update
-# Install locales dependencies
-#RUN apt-get update && apt-get install -y --no-install-recommends \
-#        locales \
-#        apt-utils \
-#    && rm -rf /var/lib/apt/lists/*
-# Configure timezone and locale
-RUN echo "Europe/Amsterdam" > /etc/timezone && \
-    dpkg-reconfigure -f noninteractive tzdata && \
-    sed -i -e 's/# en_US.UTF-8 UTF-8/en_US.UTF-8 UTF-8/' /etc/locale.gen && \
-    sed -i -e 's/# nl_NL.UTF-8 UTF-8/nl_NL.UTF-8 UTF-8/' /etc/locale.gen && \
-    echo 'LANG="nl_NL.UTF-8"'>/etc/default/locale && \
-    locale-gen nl nl_NL nl_NL.UTF-8 && \
-    dpkg-reconfigure --frontend=noninteractive locales && \
-    update-locale LANG=nl_NL.UTF-8
 RUN apt-get install -y jq nmap lsof apt-transport-https netcat
 RUN curl -sL https://deb.nodesource.com/setup_6.x -o nodesource_setup.sh
 RUN bash nodesource_setup.sh
