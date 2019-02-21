@@ -5,7 +5,6 @@ added:
 - ps4-waker
 - jq
 - nmap
-- pup
 - socat
 
 ```
