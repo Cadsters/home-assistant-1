@@ -4,10 +4,6 @@ MAINTAINER Cadster <cadsters@hotmail.com>
 
 RUN apt-get update
 RUN apt-get install -y jq nmap lsof apt-transport-https netcat
-RUN curl -sL https://deb.nodesource.com/setup_6.x -o nodesource_setup.sh
-RUN bash nodesource_setup.sh
-RUN apt-get install -y nodejs
-RUN npm install ps4-waker@1.7.0 -g
 
 RUN apt-get install -y --fix-missing \
     build-essential \
@@ -33,11 +29,5 @@ RUN apt-get install -y --fix-missing \
     socat \
     zip \
     && apt-get clean && rm -rf /tmp/* /var/tmp/*
-
-RUN cd ~ && \
-    mkdir -p dlib && \
-    git clone -b 'v19.4' --single-branch https://github.com/davisking/dlib.git dlib/ && \
-    cd  dlib/ && \
-    python3 setup.py install --yes
 
 EXPOSE 8123:8123
