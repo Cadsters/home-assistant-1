@@ -2,7 +2,6 @@
 custom home-assistant docker
 
 added:
-- ps4-waker
 - jq
 - nmap
 - socat
