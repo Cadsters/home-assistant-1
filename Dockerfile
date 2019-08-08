@@ -14,7 +14,7 @@ RUN apt-get install -y --fix-missing \
     curl \
     graphicsmagick \
     libgraphicsmagick1-dev \
-    libatlas-dev \
+    libatlas-base-dev \
     libavcodec-dev \
     libavformat-dev \
     libboost-all-dev \
