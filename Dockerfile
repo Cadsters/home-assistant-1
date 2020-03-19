@@ -1,4 +1,4 @@
-FROM homeassistant/home-assistant:latest
+FROM homeassistant/home-assistant:stable
 
 MAINTAINER Cadster <cadsters@hotmail.com>
 
