@@ -5,6 +5,7 @@ added:
 - jq
 - nmap
 - socat
+- locale
 
 ```
 docker run -d \
