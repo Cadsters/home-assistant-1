@@ -3,9 +3,12 @@ custom home-assistant docker
 
 added:
 - jq
-- nmap
-- socat
 - locale
+- nmap
+- nodejs
+- npm
+- picotts
+- socat
 
 ```
 docker run -d \
