@@ -1,4 +1,5 @@
 # home-assistant
+# Not updated anymore due to dockerhub policies
 custom home-assistant docker
 
 added:
